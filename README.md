@@ -15,7 +15,7 @@ A modern Discord-inspired chat application with real-time messaging and bot inte
 
 ```bash
 # Clone the repository
-git clone https://github.com/PropAI-discord/propai-discord.git
+git clone https://github.com/sohailabdessamad20/PropAI-discord.git
 cd propai-discord
 
 # Install dependencies
