@@ -15,17 +15,44 @@ A modern Discord-inspired chat application with real-time messaging and bot inte
 
 ```bash
 # Clone the repository
-git clone https://github.com/sohailabdessamad20/PropAI-discord.git
+git clone https://github.com/yourusername/propai-discord.git
 cd propai-discord
 
 # Install dependencies
 npm install
+
+# Setup environment variables
+cp .env .env.local
+# Edit .env.local with your API keys (see Environment Setup below)
 
 # Start development server
 npm run dev
 ```
 
 Open [http://localhost:5173](http://localhost:5173) in your browser.
+
+## Environment Setup
+
+Create a `.env.local` file in the root directory with the following variables:
+
+```env
+VITE_SHAPES_API_KEY=your_shapes_api_key_here
+VITE_DISCORD_CLIENT_ID=your_discord_client_id_here
+VITE_DISCORD_REDIRECT_URI=your_redirect_uri_here
+```
+
+### Getting Your Shapes API Key
+1. Go to [shapes.inc/developer](https://shapes.inc/developer)
+2. Sign up or log in to your account
+3. Generate a new API key
+4. In the Application option, select the AI model you want to use
+5. Copy the generated API key to your `.env.local` file
+
+### Discord OAuth Setup (Optional)
+1. Go to [Discord Developer Portal](https://discord.com/developers/applications)
+2. Create a new application
+3. Get your Client ID from the OAuth2 section
+4. Set your redirect URI (e.g., `http://localhost:5173` for local development)
 
 ## Usage
 
@@ -64,5 +91,6 @@ src/
 ├── types/          
 └── App.tsx        
 ```
+
 ## Testing website
 - [https://whimsical-kulfi-102a8a.netlify.app/](https://whimsical-kulfi-102a8a.netlify.app/)
